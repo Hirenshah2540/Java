@@ -1,19 +1,30 @@
+package collection_Examples;
 
 public class Employee {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
-				Employee1 e = new Employee1("Robert",  1994," 64-c Wall Street");
-				Employee1 e1 = new Employee1("Sam   ",   2000," 68-D Wall Street");
-				Employee1 e2= new Employee1("John  ",1999," 26-B Wall Street");
-				
-				e.display();
-				e1.display();
-				e2.display();
-
-		
-
+	
+	private int eno;
+	private String ename;
+	
+	public Employee(int eno, String ename) {
+		super();
+		this.eno = eno;
+		this.ename = ename;
 	}
+	public Employee() {
+	}
+	
+	public int getEno() {
+		return eno;
+	}
+	public void setEno(int eno) {
+		this.eno = eno;
+	}
+	public String getEname() {
+		return ename;
+	}
+	public void setEname(String ename) {
+		this.ename = ename;
+	}
+	
 
 }

@@ -1,30 +1,31 @@
-import Method_cal.*;
 
+import java.util.ArrayList;
 public class Test {
-	
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		//Multiplication
-        Multiply n=new Multiply();
-        int Mul=n.to_Mul(20, 10);
-        System.out.println("Mul :"+Mul);
-        
-        //Addition
-        Addition n1=new Addition();
-        int Add=n1.to_Add(10,8);
-        System.out.println("Add :"+Add);
-        
-        //Substitution
-        Sub n2=new Sub();
-        int Sub=n2.to_Sub(10,5);
-        System.out.println("Sub :"+Sub);
-        
-        //division
-        Div n3=new Div();
-        float Div=n3.to_Div(12,5);
-        System.out.println("Div :"+Div);
+		
+		ArrayList<Student> ar1 = new ArrayList<Student>(5);
+		
+		Student s1 = new Student();
+		s1.setNo(1);
+		s1.setEmail("aa@aa.com");
+		ar1.add(s1);
+		
+		Student s2 = new Student();
+		s2.setNo(2);
+		s2.setEmail("b@bb.com");
+		ar1.add(s2);
+		
+	    Student s3 = new Student();
+		s3.setNo(3);
+		s3.setEmail("cc@cc.com");
+		ar1.add(s3);
+	
+	System.out.println(ar1);
+		
+	
 	}
 
 }
